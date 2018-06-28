@@ -6,6 +6,7 @@ import org.launchcode.models.Location;
 import org.launchcode.models.PositionType;
 import org.launchcode.models.data.JobData;
 
+
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ public class JobForm {
     @Size(min=1, message = "Name may not be empty")
     private String name;
 
+
     @NotNull
     private int employerId;
 
@@ -28,10 +30,37 @@ public class JobForm {
         Don't forget to add getters and setters
      */
 
+
     private ArrayList<Employer> employers;
+        private ArrayList<Employer> getEmployers(ArrayList employers) {
+            return employers;
+        }
+        private void setEmployers() {
+        }
+
     private ArrayList<Location> locations;
+        private ArrayList<Location> getLocations(ArrayList locations) {
+            return locations;
+        }
+        private void setLocations() {
+        }
+
     private ArrayList<CoreCompetency> coreCompetencies;
+
+        private ArrayList<CoreCompetency> getCoreCompetencies(ArrayList coreCompetencies) {
+            return coreCompetencies;
+        }
+        private void setCoreCompetencies() {
+        }
+
     private ArrayList<PositionType> positionTypes;
+        private ArrayList<PositionType> getPositionType(ArrayList positionTypes) {
+            return positionTypes;
+        }
+        private void setPositionType() {
+        }
+
+
 
     public JobForm() {
 
